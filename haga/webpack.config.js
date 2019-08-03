@@ -30,7 +30,9 @@ module.exports = {
         extensions: ['.js', '.jsx','.ts','.tsx'],
         modules: ['node_modules'],
         alias: {
-            '@': file("src")
+            '@': file("src"),
+            "react":"preact/compat",
+            "react-dom":"preact/compat"
         }
     },
     devServer: {
