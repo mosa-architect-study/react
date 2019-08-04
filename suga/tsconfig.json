@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "es6",
+        "target": "es5",
+        "jsx": "react",
+        // 標準ライブラリの読み込み、es201xとdomを指定しておく
+        "lib": ["es2018", "dom"],
+        // モジュールの解決方式を指定、Node.js方式にするためnodeを指定
+        "moduleResolution": "node",
+        // 不要なコメントを取り除く
+        "removeComments": true,
+        // 型指定を強くしとく(noImplicitAny, strictNullChecks, noImplicitThis, alwaysStrict)
+        "strict": true,
+        // 未使用のローカル変数禁止
+        "noUnusedLocals": true,
+        // 未使用のパラメータ禁止
+        "noUnusedParameters": true,
+        // 返り値の型チェック
+        "noImplicitReturns": true,
+        // switch文のdefault抜け防止（いらんかも）
+        "noFallthroughCasesInSwitch": true,
+    }
+}
